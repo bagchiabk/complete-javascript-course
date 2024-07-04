@@ -57,24 +57,24 @@ if(scoreDolphins > scoreKoalas) {
 
 const day = "monday";
 
-// switch(day) {
-//     case "monday":
-//         console.log("Plan work for 1st day of the week");
-//         break;
-//     case "tuesday":
-//         console.log("Start executing the work planned on Monday");
-//         break;
-//     case "wednesday":
-//         console.log("Keep working its just Wednesday");
-//         break;
-//     case "thursday":
-//         console.log("Make an assessment of how much work is left");
-//         break;
-//     case "friday":
-//         console.log("Finish all the work and Enjoy the weekend");
-//         break;
-//     default: console.log("Not a Valid Day");
-// }
+switch(day) {
+    case "monday":
+        console.log("Plan work for 1st day of the week");
+        break;
+    case "tuesday":
+        console.log("Start executing the work planned on Monday");
+        break;
+    case "wednesday":
+        console.log("Keep working its just Wednesday");
+        break;
+    case "thursday":
+        console.log("Make an assessment of how much work is left");
+        break;
+    case "friday":
+        console.log("Finish all the work and Enjoy the weekend");
+        break;
+    default: console.log("Not a Valid Day");
+}
 
 // A SIMILAR EXAMPLE WITH IF-ELSE STATEMENT
 
@@ -92,3 +92,14 @@ if(day === "monday") {
 } else {
     console.log("Not a Valid Day");
 }
+
+
+// The Conditional(Ternary) Operator
+
+const age = 23;
+
+// age >= 18 ? console.log("You are allowed to Drive") : console.log("You are not allowed to drive");
+
+const drive = age >= 18 ? "Drive" : "Don't Drive";
+
+console.log(drive);
