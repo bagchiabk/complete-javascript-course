@@ -47,7 +47,48 @@ console.log("Average score of Koalas: " + scoreKoalas)
 if(scoreDolphins > scoreKoalas) {
     console.log("Dolphins win the trophy");
 } else if(scoreDolphins < scoreKoalas) {
-    console.log("KOalas win the trophy");
+    console.log("Koalas win the trophy");
 } else {
     console.log("Both win the trophy");
+}
+
+
+// SWITCH STATEMENT
+
+const day = "monday";
+
+// switch(day) {
+//     case "monday":
+//         console.log("Plan work for 1st day of the week");
+//         break;
+//     case "tuesday":
+//         console.log("Start executing the work planned on Monday");
+//         break;
+//     case "wednesday":
+//         console.log("Keep working its just Wednesday");
+//         break;
+//     case "thursday":
+//         console.log("Make an assessment of how much work is left");
+//         break;
+//     case "friday":
+//         console.log("Finish all the work and Enjoy the weekend");
+//         break;
+//     default: console.log("Not a Valid Day");
+// }
+
+// A SIMILAR EXAMPLE WITH IF-ELSE STATEMENT
+
+if(day === "monday") {
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+} else if(day === "tuesday") {
+    console.log("Prepare theory videos");
+} else if(day === "wednesday" || day === "thursday") {
+    console.log("Write code examples");
+} else if(day === "friday") {
+    console.log("Record Videos");
+} else if(day === "saturday" || day === "sunday") {
+    console.log("Enjoy the Weekend");
+} else {
+    console.log("Not a Valid Day");
 }
