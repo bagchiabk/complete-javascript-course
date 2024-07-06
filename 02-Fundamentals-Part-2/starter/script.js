@@ -83,3 +83,24 @@ function fruitJuicer(apple, oranges) {
 }
 
 console.log(fruitJuicer(2, 3));
+
+
+// Reviewing Functions
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
+}
+
+const yearsLeftForRetirement = function(birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 60 - age;
+
+    if(retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+}
+
+console.log(yearsLeftForRetirement(1976, "Michael"))
