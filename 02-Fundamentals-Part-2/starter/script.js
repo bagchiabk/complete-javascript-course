@@ -234,3 +234,50 @@ console.log(tips);
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
+
+
+// JAVASCRIPT OBJECTS
+
+// let jonas = {
+//     firstName: "Jonas",
+//     lastName: "Schmedtmann",
+//     Age: 2024 - 1986,
+//     job: "Teacher",
+//     friends: ["Michael", "Peter", "Steven"]
+// }
+
+// let interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends")
+
+// if(jonas[interestedIn]) {
+//     console.log(jonas[interestedIn])
+// } else {
+//     console.log("Wrong Request. Choose between firstName, lastName, Age, job and friends");
+// }
+
+// jonas.location = "Portugal";
+// console.log(jonas);
+
+// Challenge
+// Jonas has three friends and his best friend is called Michael
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, ${jonas.friends} and his best friend is called ${jonas.friends[0]}`)
+
+let jonas = {
+    firstName: "Jonas",
+    lastName: "Schmedtmann",
+    birthYear: 1991,
+    job: "Teacher",
+    friends: ["Michael", "Peter", "Steven"],
+    hasDriversLicense: true,
+
+    calcAge: function (birthYear) {
+        return 2024 - this.birthYear
+    },
+
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license`
+    }
+}
+
+console.log(`${jonas.firstName} is a ${jonas.calcAge()}-year old ${jonas.job}, and he has ${jonas.hasDriversLicense ? "a" : "no"} driver's license`)
+console.log(jonas.getSummary());
