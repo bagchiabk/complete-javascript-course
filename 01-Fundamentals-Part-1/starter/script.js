@@ -7,7 +7,7 @@ if (js === "amazing") {
 
 console.log(40 + 8 + 23 - 10);
 
-let firstName = "Abhishek"; // Camel Case for naming Variables
+let firstName = "Jonas"; // Camel Case for naming Variables
 
 let n = '1' + 1;
 n = n - 1;
